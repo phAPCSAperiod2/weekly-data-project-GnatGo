@@ -56,6 +56,7 @@ public class App {
         // TODO 5: Create a WeeklyData object
         //         Pass the weekData array into the constructor
         // -------------------------------------------------------------
+        WeeklyData drawingWeek = new WeeklyData(weekData);
 
 
         // -------------------------------------------------------------
@@ -68,12 +69,17 @@ public class App {
         //
         //         Use clear labels and formatted output if needed
         // -------------------------------------------------------------
+        System.out.println("Total drawing hours this week: " + drawingWeek.getTotal());
+        System.out.println("Average drawing hours per day: " + drawingWeek.getAverage());
+        System.out.println("Minimum drawing hours in a day: " + drawingWeek.getMin());
+        System.out.println("Maximum drawing hours in a day: " + drawingWeek.getMax());
 
 
         // -------------------------------------------------------------
         // TODO 7: Display the full week of data
         //         Use the toString() method from WeeklyData
         // -------------------------------------------------------------
+        System.out.println("Your drawing data for the week: " + drawingWeek.toString());
 
 
         // -------------------------------------------------------------
@@ -82,6 +88,15 @@ public class App {
         //         --> "You were very hydrated this week!"
         //         --> etc.
         // -------------------------------------------------------------
+        if (drawingWeek.getTotal() >= goal){
+            System.out.println("Great job! You met your drawing goals this week!");
+            System.out.println("Keep up the good work!" );
+        } 
+        
+        else {
+            System.out.println("Keep pushing! You can reach your drawing goals next week!");
+            System.out.println("Maybe try to draw for at least " + (goal / 7) + " hours each day to meet your weekly goal of " + goal + " hours." );
+        }
 
 
     }

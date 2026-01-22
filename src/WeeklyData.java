@@ -67,7 +67,7 @@ public class WeeklyData {
      *         or 0.0 if the array is empty
      */
     public double getAverage() {
-        doulbe average = 0.0;
+        double average = 0.0;
         if (drawingData.length == 0) {
             return 0.0;
         } 
