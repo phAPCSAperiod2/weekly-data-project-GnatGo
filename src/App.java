@@ -14,19 +14,22 @@ public class App {
         // -------------------------------------------------------------
         // TODO 1: Create a Scanner for user input
         // -------------------------------------------------------------
-
+        Scanner input = new Scanner(System.in);
 
         // -------------------------------------------------------------
         // TODO 2: Give information about your program
         //         Ask the user about their goals (if applicable)
         // -------------------------------------------------------------
-
+        System.out.println("This program tracks your weekly drawing data.");
+        System.out.println("How many hours of drawing do you aim for each week?");
+        double goal = input.nextDouble();
 
         // -------------------------------------------------------------
         // TODO 3: Create an array to hold 7 days of data
         //         Use an appropriate data type (int or double)
         //         Name the array weekData
         // -------------------------------------------------------------
+        double[] weekData = new double[7];
 
 
         // -------------------------------------------------------------
@@ -38,6 +41,15 @@ public class App {
         //         - Use a while loop to prevent negative values
         //         - Re-prompt if the value is invalid
         // -------------------------------------------------------------
+        for (int i = 0; i < weekData.length; i++) {
+            System.out.print("Enter the hours you drew on day " + (i + 1) + ": ");
+            double dailyData = input.nextDouble();
+            while (dailyData < 0) {
+                System.out.print("Invalid input. Please enter a non-negative value for day " + (i + 1) + ": ");
+                dailyData = input.nextDouble();
+            }
+            weekData[i] = dailyData;
+        }
 
 
         // -------------------------------------------------------------
