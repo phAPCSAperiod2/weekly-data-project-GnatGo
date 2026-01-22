@@ -95,7 +95,7 @@ public class App {
             System.out.println("Great job! You met your drawing goals this week!");
             System.out.println("Keep up the good work!" );
             if (goal <= 7) {
-                System.out.println("Maybe try to increase your goal for next week to 10 hours to keep challenging yourself!" );
+                System.out.println("Maybe try to increase your goal for next week to 8 hours to keep challenging yourself!" );
             }
             else {
                 System.out.println("Maybe try to increase your goal for next week to " + (goal * 1.1) + " hours to keep challenging yourself!" );
