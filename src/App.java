@@ -6,6 +6,8 @@ import java.util.Scanner;
  * - Use this App class to collect user input and test your WeeklyData methods.
  * - Follow all TODOs carefully.
  * - Do NOT hard-code values — use loops and method calls.
+ * 
+ * - This program was written with the help of copilot AI.
  */
 public class App {
 
