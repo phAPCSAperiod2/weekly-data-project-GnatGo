@@ -69,6 +69,7 @@ public class App {
         //
         //         Use clear labels and formatted output if needed
         // -------------------------------------------------------------
+        System.out.println();
         System.out.println("Total drawing hours this week: " + drawingWeek.getTotal());
         System.out.println("Average drawing hours per day: " + drawingWeek.getAverage());
         System.out.println("Minimum drawing hours in a day: " + drawingWeek.getMin());
@@ -79,7 +80,7 @@ public class App {
         // TODO 7: Display the full week of data
         //         Use the toString() method from WeeklyData
         // -------------------------------------------------------------
-        System.out.println("Your drawing data for the week: " + drawingWeek.toString());
+        System.out.println("Your drawing data for the week: \n" + drawingWeek.toString());
 
 
         // -------------------------------------------------------------
