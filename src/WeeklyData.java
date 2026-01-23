@@ -2,15 +2,23 @@
  * The WeeklyData class stores and analyzes a week’s worth of numeric data.
  * This could represent steps taken, hours of sleep, money spent, screen time,
  * or any other measurable daily value.
+ * 
+ * The class provides methods to calculate:
+ * - Total sum of all daily values
+ * - Average value per day
+ * - Maximum value in the week
+ * - Minimum value in the week
+ * - A formatted string representation of the week's data
  */
 public class WeeklyData {
 
     // -------------------------------------------------------------
     // Instance Variables
     // -------------------------------------------------------------
-    // TODO: Declare a private array to store the week’s data
-    //       Choose an appropriate type (double[] or int[])
-    //       Create other instance variables as necessary
+    /**
+     * Array to store the week's numeric data.
+     * Contains exactly 7 values, one for each day of the week.
+     */
     private double[] drawingData = new double[7];
     
 

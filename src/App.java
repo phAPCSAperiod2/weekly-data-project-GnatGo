@@ -1,6 +1,14 @@
 import java.util.Scanner;
 
 /**
+ * App class for the Weekly Data Analyzer.
+ * 
+ * This application collects user input for a weekly drawing hours goal and daily
+ * drawing hours data. It then uses the WeeklyData class to calculate and display
+ * statistics including total hours, average hours per day, minimum and maximum
+ * hours, and provides personalized feedback based on the user's performance against
+ * their weekly goal.
+ * 
  * Instructions:
  * - Complete the WeeklyData.java class first.
  * - Use this App class to collect user input and test your WeeklyData methods.
@@ -11,6 +19,15 @@ import java.util.Scanner;
  */
 public class App {
 
+    /**
+     * Main method that drives the application flow.
+     * 
+     * Prompts the user for their weekly drawing goal and daily drawing data,
+     * creates a WeeklyData object to analyze the data, and displays the results
+     * along with personalized insights about their performance.
+     * 
+     * @param args command-line arguments (not used in this application)
+     */
     public static void main(String[] args) {
 
         // -------------------------------------------------------------
@@ -98,7 +115,7 @@ public class App {
                 System.out.println("Maybe try to increase your goal for next week to 8 hours to keep challenging yourself!" );
             }
             else {
-                System.out.println("Maybe try to increase your goal for next week to " + (goal * 1.1) + " hours to keep challenging yourself!" );
+                System.out.println("Maybe try to increase your goal for next week to " + (goal * 1.5) + " hours to keep challenging yourself!" );
             }
         } 
         

@@ -24,6 +24,12 @@ class WeeklyDataTest {
     // -------------------------------------------------
     // Constructor Deep Copy Tests
     // -------------------------------------------------
+    /**
+     * Tests that the WeeklyData constructor creates a deep copy of the input array.
+     * 
+     * Verifies that external modifications to the original array do not affect
+     * the internal data stored in the WeeklyData object.
+     */
     @Test
     void constructor_makesDeepCopy_notAliasingInput() {
         double[] input = {10.0, 20.0, 30.0};
@@ -43,6 +49,12 @@ class WeeklyDataTest {
     }
 
     @Test
+    /**
+     * Tests that the WeeklyData constructor correctly copies all elements from the input array.
+     * 
+     * Verifies that the constructor properly initializes the internal array with the
+     * correct values and length.
+     */
     void constructor_copiesAllElements_correctLength() {
         double[] input = {5.5, 10.0, 20.25};
         WeeklyData wd = new WeeklyData(input);
@@ -53,6 +65,9 @@ class WeeklyDataTest {
     // -------------------------------------------------
     // getTotal Tests
     // -------------------------------------------------
+    /**
+     * Tests that the getTotal() method correctly sums multiple typical values.
+     */
     @Test
     void getTotal_typicalValues() {
         double[] input = {100, 200, 300};
@@ -62,6 +77,9 @@ class WeeklyDataTest {
     }
 
     @Test
+    /**
+     * Tests that the getTotal() method correctly sums a single value.
+     */
     void getTotal_singleValue() {
         double[] input = {42.5};
         WeeklyData wd = new WeeklyData(input);
@@ -72,6 +90,9 @@ class WeeklyDataTest {
     // -------------------------------------------------
     // getAverage Tests
     // -------------------------------------------------
+    /**
+     * Tests that the getAverage() method correctly calculates the average for typical values.
+     */
     @Test
     void getAverage_typicalValues() {
         double[] input = {2, 4, 6, 8};
@@ -81,6 +102,9 @@ class WeeklyDataTest {
     }
 
     @Test
+    /**
+     * Tests that the getAverage() method correctly handles values that result in a decimal average.
+     */
     void getAverage_decimalResult() {
         double[] input = {1, 2, 3};
         WeeklyData wd = new WeeklyData(input);
@@ -91,6 +115,9 @@ class WeeklyDataTest {
     // -------------------------------------------------
     // getMax Tests
     // -------------------------------------------------
+    /**
+     * Tests that the getMax() method correctly identifies the maximum value in a typical dataset.
+     */
     @Test
     void getMax_typicalValues() {
         double[] input = {10, 50, 30, 75, 25};
